@@ -1,8 +1,14 @@
 <template>
-  <select v-model="selectedLocale" @change="changeLanguage">
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-  </select>
+  <div class="language-selector">
+    <select v-model="selectedLocale" @change="changeLanguage">
+      <option value="en">
+        <span class="flag-icon flag-icon-us"></span> English
+      </option>
+      <option value="fr">
+        <span class="flag-icon flag-icon-fr"></span> Français
+      </option>
+    </select>
+  </div>
 </template>
 
 <script>
@@ -25,19 +31,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.language-selector {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
-@media screen and (max-width: 768px) {
-  .language-selector {
-    top: 50px;
-    right: 10px;
-  }
-}
-</style>

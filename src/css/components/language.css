@@ -1,0 +1,52 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+.language-selector {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.language-selector select {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+}
+.language-selector option {
+  padding: 10px;
+  background: white;
+  font-size: 16px;
+  color: #333;
+}
+.language-selector .flag-icon {
+  margin-right: 8px;
+}
+@media screen and (max-width: 768px) {
+  .language-selector {
+    top: 50px;
+    right: 10px;
+  }
+}
+
+/* Adding the flags using FontAwesome */
+.flag-icon-us::before {
+  content: "\f1fa"; /* Unicode for the flag icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.flag-icon-fr::before {
+  content: "\f1eb"; /* Unicode for the flag icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}/*# sourceMappingURL=language.css.map */
