@@ -6,6 +6,7 @@ const messages = {
     welcomeMessage: 'Introducing Design Patterns',
     discover: 'Discover and learn more about design patterns in Python.',
     learnMore: 'Learn More',
+    patternsIntroduction: 'Discover the different design patterns',
     pattern: {
       Singleton: {
         name: 'Singleton',
@@ -18,9 +19,10 @@ const messages = {
     }
   },
   fr: {
-    welcomeMessage: 'Présentation des Design Patterns',
-    discover: 'Découvrez et apprenez-en plus sur les design patterns en Python.',
+    welcomeMessage: 'Présentation des Patrons de conceptions',
+    discover: 'Découvrez et apprenez-en plus sur les patrons de conceptions en Python.',
     learnMore: 'En savoir plus',
+    patternsIntroduction: 'Découvrez les différents patrons de conceptions',
     pattern: {
       Singleton: {
         name: 'Singleton',
