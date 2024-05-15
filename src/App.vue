@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <LanguageSelector class="language-selector"></LanguageSelector>
+    <Home></Home>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './css/global.scss';
+import Home from './views/Home.vue'
+import LanguageSelector from './components/LanguageSelector.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Home,
+    LanguageSelector
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped src="./css/global.scss">
 </style>
