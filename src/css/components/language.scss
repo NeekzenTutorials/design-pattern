@@ -2,8 +2,8 @@
 
 .language-selector {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 50px;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -22,6 +22,20 @@
     position: relative;
     z-index: 1;
     margin-left: 10px;
+
+    .flag-option {
+      padding-left: 25px;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    .en {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/us.svg");
+    }
+
+    .fr {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/fr.svg");
+    }
   }
 
   option {
@@ -36,20 +50,19 @@
   }
 
   @media screen and (max-width: 768px) {
-    top: 50px;
-    right: 10px;
+    top: 25px;
+    right: 25px;
   }
 }
 
-/* Adding the flags using FontAwesome */
 .flag-icon-us::before {
-  content: "\f1fa"; /* Unicode for the flag icon */
+  content: "\f1fa";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
 .flag-icon-fr::before {
-  content: "\f1eb"; /* Unicode for the flag icon */
+  content: "\f1eb";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }

@@ -1,5 +1,6 @@
 // src/i18n.js
 import { createI18n } from 'vue-i18n'
+import Cookies from 'js-cookie'
 
 const messages = {
   en: {
@@ -7,6 +8,7 @@ const messages = {
     discover: 'Discover and learn more about design patterns in Python.',
     learnMore: 'Learn More',
     patternsIntroduction: 'Discover the different design patterns',
+    finish: 'This pattern is still being written',
     pattern: {
       Singleton: {
         name: 'Singleton',
@@ -23,6 +25,7 @@ const messages = {
     discover: 'Découvrez et apprenez-en plus sur les patrons de conceptions en Python.',
     learnMore: 'En savoir plus',
     patternsIntroduction: 'Découvrez les différents patrons de conceptions',
+    finish: 'Ce patron est encore en cours d\'écriture',
     pattern: {
       Singleton: {
         name: 'Singleton',
@@ -36,8 +39,10 @@ const messages = {
   }
 }
 
+const defaultLocale = Cookies.get('locale') || 'en'
+
 const i18n = createI18n({
-  locale: 'en',
+  locale: defaultLocale,
   messages,
 })
 

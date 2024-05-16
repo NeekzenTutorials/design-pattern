@@ -25,6 +25,7 @@
           <h2>{{ $t(`pattern.${pattern.name}.name`) }}</h2>
           <p>{{ $t(`pattern.${pattern.name}.description`) }}</p>
         </div>
+        <div v-if="!pattern.finish" class="finish">{{ $t('finish') }}</div>
         <router-link :to="`/pattern/${pattern.name}`" class="learn-more">{{ $t('learnMore') }}</router-link>
       </div>
     </section>
@@ -42,8 +43,8 @@ export default {
   data() {
     return {
       patterns: [
-        { name: 'Singleton' },
-        { name: 'Factory' },
+        { name: 'Singleton', finish:false },
+        { name: 'Factory', finish:false },
       ],
       scrolled: false
     };
