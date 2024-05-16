@@ -65,6 +65,11 @@
   z-index: 4;
   font-size: 1.2rem;
   padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(0deg, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #4caf50;
 }
 
 .home p::before {
@@ -90,6 +95,13 @@
 
 .introduction {
   color: white;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 @keyframes fadeInUp {
@@ -193,8 +205,8 @@
 .patterns {
   background: black;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   position: relative;
 }
@@ -409,16 +421,21 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
+
 .cards-wrapper {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
-  padding: 4rem;
-  margin: 0 auto;
-  width: max-content;
+  width: 100%;
+  margin-bottom: 2rem;
   z-index: 3;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .card {
