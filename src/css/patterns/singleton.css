@@ -1,0 +1,131 @@
+.singleton {
+  background: linear-gradient(to bottom, rgb(59, 59, 59), rgb(0, 0, 0));
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow-y: auto;
+}
+
+h2 {
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background: rgba(41, 41, 41, 0.8);
+  z-index: 500;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+}
+
+.title {
+  margin-left: 45%;
+}
+
+.content {
+  color: black;
+  padding: 100px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introduction, .context, .warning, .advanced-content {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.introduction:hover {
+  background: rgba(86, 236, 99, 0.6);
+  box-shadow: 0 0 10px rgba(21, 231, 94, 0.6);
+}
+
+.context:hover {
+  background: rgba(79, 129, 228, 0.6);
+  box-shadow: 0 0 10px rgba(18, 104, 242, 0.6);
+}
+
+.warning:hover {
+  background: rgba(239, 68, 68, 0.6);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.advanced-content:hover {
+  background: rgba(79, 129, 228, 0.6);
+  box-shadow: 0 0 10px rgba(18, 104, 242, 0.6);
+}
+
+@media (max-width: 524px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+  .back-button {
+    position: relative;
+    left: 0;
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-left: 0;
+    transform: translateX(0);
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .content {
+    padding: 70px 10px 10px 10px;
+  }
+  .introduction, .context {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 5px;
+  }
+  .back-button {
+    position: relative;
+    left: 0;
+    margin-bottom: 5px;
+  }
+  .title {
+    margin-left: 0;
+    transform: translateX(0);
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+  }
+  .content {
+    padding: 60px 5px 5px 5px;
+  }
+  .introduction, .context {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=singleton.css.map */

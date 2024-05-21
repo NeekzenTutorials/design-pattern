@@ -110,6 +110,15 @@ const messages = {
 
     singleton: {
       introduction: 'The Singleton is a creational design pattern that ensures that a class has only one instance and provides a global point of access to this instance.',
+      context: {
+        1: 'This <b>design pattern</b> is commonly used to control the <u>creation of an object</u> and ensure that there is only <u>one instance</u> of that object. Thus, it avoids instantiating multiple <u>heavy</u> resource objects.',
+        2: 'For example: <em>database connection objects</em>, <em>configuration objects</em>, <em>file management objects</em>, etc.',
+      },
+      warning: '<b><u>Warning</b></u>: Although the Singleton prevents inadvertently instantiating multiple heavy objects, it is important to note that it does not respect the <u>Single Responsibility Principle</u> and can be difficult to test.',
+      advancedTitle: 'Advanced Explanation',
+      advanced: {
+        1: 'The recurring problem that leads us to use the <b>Singleton</b> is when we need to access an object (often heavy in resources) whose <u>data is shared</u>.<br /><br />The operation of the design pattern is <u>simple</u>: You instantiate an object, then, after a certain time you instantiate it again. Instead of creating this object a second time, you will retrieve the one that already exists.<br /><br />Generally, to avoid any <u>confusion</u>, the constructor and the getter of this object are the same method.'
+      }
     }
   },
   fr: {
@@ -219,6 +228,16 @@ const messages = {
 
     singleton: {
       introduction: 'Le <b>Singleton</b> est un patron de conception de création qui garantit qu\'une classe n\'a qu\'<u>une seule instance</u> et fournit un <u>point d\'accès global</u> à cette instance.',
+      context: {
+        1: 'Ce <b>patron de conception</b> est couramment utilisé afin de <u>contrôler la création</u> d\'un objet et de s\'assure qu\'il n\'existe qu\'<u>une seule instance</u> de cet objet.<br />Ainsi cela permet d\'éviter d\'instancier plusieurs fois des objets <u>lourds</u> en ressources.',
+        2: 'Par exemple: <em>les objets de connexion à une base de données</em>, <em>les objets de configuration</em>, <em>les objets de gestion de fichiers</em>, etc.',
+      },
+      warning: '<b><u>Attention</b></u>: Bien que le Singleton permette d\'éviter d\'instancier par inadvertance plusieurs objets lourds, il est important de noter qu\'il ne respecte pas le <u>principe de responsabilité unique</u> (Single Responsibility Principle) et peut être difficile à tester.'  ,
+      advancedTitle: 'Explication détaillés', 
+      advanced: {
+        1: 'Le problème récurent qui nous ammènes à utiliser le <b>Singleton</b> est lorsqu\'on doit accéder à un objet (souvent lourds en ressources) dont les <u>données sont partagées</u>.<br /><br /> Le fonctionnement du patron de conception est <u>simple</u>: Vous instanciez un objet, puis, après un certains vous l\'instanciez une nouvelle fois. Au lieu de créer une deuxième fois cet objet, vous allez récupérer celui qui existe déjà.<br /><br />Généralement, afin d\'éviter toute <u>confusion</u>, le constructeur et le getter de cet objet sont la même méthode.',
+
+      }
     }
   },
 }
