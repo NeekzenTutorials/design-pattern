@@ -105,7 +105,8 @@ const messages = {
         name: 'Visitor',
         description: 'Represent an operation to be performed on the elements of an object structure.'
       }
-    }
+    },
+    backHome: 'Back to Home',
   },
   fr: {
     welcomeMessage: 'Présentation des Patrons de conceptions',
@@ -209,7 +210,8 @@ const messages = {
         name: 'Visitor',
         description: 'Représente une opération à effectuer sur les éléments d\'une structure d\'objets.'
       }
-    }
+    },
+    backHome: 'Retour à l\'accueil',
   },
 }
 

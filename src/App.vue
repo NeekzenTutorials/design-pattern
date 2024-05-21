@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <LanguageSelector class="language-selector"></LanguageSelector>
-    <Home></Home>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -9,6 +9,7 @@
 import './css/global.scss';
 import Home from './views/Home.vue'
 import LanguageSelector from './components/LanguageSelector.vue'
+
 
 export default {
   name: 'App',

@@ -28,7 +28,7 @@
             <p>{{ $t(`pattern.${pattern.name}.description`) }}</p>
           </div>
           <div v-if="!pattern.finish" class="finish">{{ $t('finish') }}</div>
-          <router-link :to="`/pattern/${pattern.name}`" class="learn-more">{{ $t('learnMore') }}</router-link>
+          <router-link :to="`${pattern.name.toLowerCase()}`" class="learn-more">{{ $t('learnMore') }}</router-link>
         </div>
       </div>
     </section>
@@ -42,7 +42,7 @@
             <p>{{ $t(`pattern.${pattern.name}.description`) }}</p>
           </div>
           <div v-if="!pattern.finish" class="finish">{{ $t('finish') }}</div>
-          <router-link :to="`/pattern/${pattern.name}`" class="learn-more">{{ $t('learnMore') }}</router-link>
+          <router-link :to="`${pattern.name.toLowerCase()}`" class="learn-more">{{ $t('learnMore') }}</router-link>
         </div>
       </div>
     </section>
@@ -56,7 +56,7 @@
             <p>{{ $t(`pattern.${pattern.name}.description`) }}</p>
           </div>
           <div v-if="!pattern.finish" class="finish">{{ $t('finish') }}</div>
-          <router-link :to="`/pattern/${pattern.name}`" class="learn-more">{{ $t('learnMore') }}</router-link>
+          <router-link :to="`${pattern.name.toLowerCase()}`" class="learn-more">{{ $t('learnMore') }}</router-link>
         </div>
       </div>
     </section>
@@ -123,6 +123,9 @@ export default {
       } else {
         console.error('Invalid target for scrollIntoView:', target);
       }
+    },
+    goToPattern(pattern) {
+      this.$router.push(`/patterns/${pattern}`);
     }
   }
 };
