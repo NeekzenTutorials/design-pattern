@@ -7,7 +7,7 @@
       </section>
 
       <section class="content">
-        
+        <div class="introduction" v-html="$t('singleton.introduction')"></div>
       </section>
 
     </div>

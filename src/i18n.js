@@ -107,6 +107,10 @@ const messages = {
       }
     },
     backHome: 'Back to Home',
+
+    singleton: {
+      introduction: 'The Singleton is a creational design pattern that ensures that a class has only one instance and provides a global point of access to this instance.',
+    }
   },
   fr: {
     welcomeMessage: 'Présentation des Patrons de conceptions',
@@ -212,6 +216,10 @@ const messages = {
       }
     },
     backHome: 'Retour à l\'accueil',
+
+    singleton: {
+      introduction: 'Le <b>Singleton</b> est un patron de conception de création qui garantit qu\'une classe n\'a qu\'<u>une seule instance</u> et fournit un <u>point d\'accès global</u> à cette instance.',
+    }
   },
 }
 

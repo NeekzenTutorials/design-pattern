@@ -50,8 +50,8 @@
     font-size: 1.2rem;
   }
 
-  @media screen and (max-width: 188) {
-    font-size: 0.9rem;
+  @media screen and (max-width: 310px) {
+    font-size: 0.7rem;
   }
 }
 
@@ -149,15 +149,19 @@
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   @media screen and (max-width: 576px) {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
   @media screen and (max-width: 410px) {
-    font-size: 0.6rem;
+    font-size: 0.45rem;
+  }
+
+  @media screen and (max-width: 310px) {
+    font-size: 0.35rem;
   }
 }
 
